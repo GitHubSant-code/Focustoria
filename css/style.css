@@ -1,0 +1,16 @@
+.bg-color-home {
+    background-color:#262626;;
+    background-size: cover;
+    position: relative;
+  }
+
+  #first-title{
+    color: #ffff;
+    font-size: 25px;
+    text-shadow: #d93d00;
+    float: left;
+    padding-left: 10px;
+  }
+
+
+  
