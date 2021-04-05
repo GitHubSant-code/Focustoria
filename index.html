@@ -16,6 +16,7 @@
      <!--<link rel="shortcut icon" href=""> icona ancora da mettere-->
      <script src="js/app.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <script src="https://kit.fontawesome.com/870a014513.js" crossorigin="anonymous"></script>
 
     
      <!-- css -->
@@ -32,13 +33,48 @@
  </head>
 
  <body class="bg-color-home">
-    <section id="Title">
-       <center><h1 id="">A FANTASTEGHAAAAAA</h1></center>
-         <center><h1 id="">ER CATTECALLING!?</h1>  </center>
-<!--first-title-->
+    <section>
+       
+<!--<div class="topnav" id="myTopnav">
+      <nav>
+         <a href="#">HOME</a>
+         <a href="#">PROGETTO</a>
+         <a href="#info" class="nav-link">INFORMAZIONI</a>
+         <div id="indicator"></div>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+       </nav>
+</div> -->
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">Progetto</a>
+  <a href="#contact">Storia</a>
+  <a href="#about">Boh</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    </section>
+    <section class="section">
+       <div class="text-center">
+         <h1 id="Under-nav" class="text-center">Focus Storia</h1>
+         <p class="paragraph-desc">Un approfondimento storico sui popoli italici, sugli etruschi,</p>
+         <p>sulla conquista macedone e sui regni dopo Alessandro Magno</p>
+       </div>
     </section>
 
-    
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
  </body>
 
 
