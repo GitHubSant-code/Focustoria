@@ -3,10 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600&family=Hammersmith+One&family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600&family=Hammersmith+One&family=Poppins:wght@500&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+}
 .bg-color-home {
-    background-color:#262626;
+
+  background-color: #262626;
     margin: -8px;
   }
+
+  .bg-color-home-1 {
+
+      margin: -8px;
+    }
+  
 
 #home{
   position: relative;
@@ -145,8 +155,8 @@ a{
 }
 
 footer{
-  background-color: #262626;
-  padding-top: 30px;
+  background-color: #333333;
+  padding-top: 10px;
   padding-bottom: 6px;
   margin: -8px;
   text-align: center;
@@ -236,10 +246,14 @@ footer{
   padding-bottom: 250px;
 }
 
+.divis-section1{
+  background-image: url();
+  padding-top: 10px;
+  padding-bottom: 420px;
+}
 
 .divis-section{
   padding-top: 10px;
-  background-color: #677ea3;
   margin: -8px;
   padding-bottom: 420px;
 }
@@ -452,4 +466,57 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin: auto;
+}
+
+.menu{
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+}
+nav .line {
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0 0 0;
+  background: #bf9322;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 40px 0 0;
+  opacity: 0.4;
+  transition: all 0.4s ease;
+}
+nav ul li:hover {
+  opacity: 0.7;
+}
+nav ul li.active {
+  opacity: 1;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+}
+
+
+#esercito{
+  background-image: url(https://1.bp.blogspot.com/-cWfSwn8t6CI/X1PtTSHQlMI/AAAAAAAA3Ck/40cyAT5542krqNMS6Hbnshgxx993X9JAACLcBGAsYHQ/s550/prima-guerra-macedonica3.jpg);
+  background-size:cover;
 }
