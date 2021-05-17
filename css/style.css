@@ -12,11 +12,9 @@
     margin: -8px;
   }
 
-  .bg-color-home-1 {
-
-      margin: -8px;
-    }
-  
+hr{
+   width: 30%px;
+  }
 
 #home{
   position: relative;
@@ -103,6 +101,28 @@
     }
   }
 
+  .vertical-content {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+
+
+
   #Top-btn {
     display: none; 
     position: fixed; 
@@ -176,6 +196,9 @@ footer{
   color:#ffffff;
 }
 
+.text-dark{
+  color: #000000;
+}
 .text-center{
   text-align: center;
 }
@@ -247,17 +270,31 @@ footer{
 }
 
 .divis-section1{
+  
   background-image: url();
   padding-top: 10px;
   padding-bottom: 420px;
 }
 
 .divis-section{
+  background-color: #262626;
   padding-top: 10px;
   margin: -8px;
   padding-bottom: 420px;
 }
 
+.divis-section-img-and-text{
+  background-color: #262626;
+  padding-top: 10px;
+  margin: -8px;
+  padding-bottom: 80px;
+}
+
+.divis-section-img{
+  padding-top: 60px;
+  margin: -8px;
+  padding-bottom: 150px;
+}
 
 .title-section{
   text-align: center;
@@ -274,6 +311,20 @@ footer{
 }
 
 
+#title-section-1{
+  text-align: center;
+  font-size: 40px;
+  color: #d4d5d6;
+  font-family: 'Bebas Neue', cursive;
+
+  font-family: 'Cinzel', serif;
+
+  font-family: 'Hammersmith One', sans-serif;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
 #Intro-Text{
   padding-top: 20px;
   padding-bottom: 50px;
@@ -287,7 +338,7 @@ footer{
 .title-sub-section{
   padding-top: 20px;
   font-size: 30px;
-  color: #01241f;
+  color: #d49b00;
   margin-left: 15px;
   font-family: 'Bebas Neue', cursive;
 
@@ -308,7 +359,11 @@ footer{
 
 }
 
-
+.paragraph-desc-center{
+  max-width: 500px;
+  font-size: 18px;
+  text-align: center;
+}
 
 #Img-Right{
   float: right;
@@ -515,8 +570,124 @@ nav ul li a {
   font-size: 14px;
 }
 
+#gue{
+  background-image: url(http://www.liceocecioni.gov.it/sitorecupero/percorsi/Filippo/fal.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000;
+}
 
-#esercito{
-  background-image: url(https://1.bp.blogspot.com/-cWfSwn8t6CI/X1PtTSHQlMI/AAAAAAAA3Ck/40cyAT5542krqNMS6Hbnshgxx993X9JAACLcBGAsYHQ/s550/prima-guerra-macedonica3.jpg);
-  background-size:cover;
+#filippoII{
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 400px;
+}
+
+#AlessandroMagno{
+
+  margin-top: 80px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 400px;
+}
+
+
+#Mappa-Aless{
+  width: 500px;
+}
+
+
+
+
+
+
+/*slider*/
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text-sli {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+  background-color: red;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

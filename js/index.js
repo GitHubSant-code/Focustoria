@@ -95,46 +95,36 @@ if(active.length) {
   });
 }
 
-nav.find('ul li a').click(function(e) {
-  e.preventDefault();
-  if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
-    
-    nav.addClass('animate');
 
-    var _this = $(this);
 
-    nav.find('ul li').removeClass('active');
 
-    var position = _this.parent().position();
-    var width = _this.parent().width();
 
-    if(position.left >= pos) {
-      line.animate({
-        width: ((position.left - pos) + width)
-      }, 300, function() {
-        line.animate({
-          width: width,
-          left: position.left
-        }, 150, function() {
-          nav.removeClass('animate');
-        });
-        _this.parent().addClass('active');
-      });
-    } else {
-      line.animate({
-        left: position.left,
-        width: ((pos - position.left) + wid)
-      }, 300, function() {
-        line.animate({
-          width: width
-        }, 150, function() {
-          nav.removeClass('animate');
-        });
-        _this.parent().addClass('active');
-      });
-    }
+//Slider inital
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    pos = position.left;
-    wid = width;
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-});
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
