@@ -754,3 +754,10 @@ nav ul li a {
 .divis-section-bb{
   padding-bottom: 1500px;
 }
+
+#Mappa-Aless{
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  padding-bottom:30px ;
+}
